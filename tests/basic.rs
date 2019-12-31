@@ -16,6 +16,8 @@ fn test_basic() {
             }
         }
     };
+
+    #[cfg_attr(rustfmt, rustfmt_skip)]
     assert_eq!(ret.as_str(), "<html>\
         <head>\
             <title>Test title</title>\
