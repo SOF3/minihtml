@@ -1,0 +1,20 @@
+[workspace]
+members = [
+	".",
+	"codegen",
+]
+
+[package]
+name = "minihtml"
+version = "0.1.0"
+authors = ["SOFe <sofe2038@gmail.com>"]
+edition = "2018"
+license = "Apache-2.0"
+repository = "https://github.com/SOF3/minihtml"
+homepage = "https://github.com/SOF3/minihtml"
+readme = "README.md"
+description = "Simple Rust macro for dynamic HTML generation"
+
+[dependencies]
+minihtml-codegen = {path = "codegen", version = "0.1.0"}
+proc-macro-hack = "0.5.11"

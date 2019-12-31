@@ -1,0 +1,24 @@
+[package]
+name = "minihtml-codegen"
+version = "0.1.0"
+authors = ["SOFe <sofe2038@gmail.com>"]
+edition = "2018"
+license = "Apache-2.0"
+repository = "https://github.com/SOF3/minihtml"
+homepage = "https://github.com/SOF3/minihtml"
+readme = "README.md"
+description = "Simple Rust macro for dynamic HTML generation"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+itertools = "0.8.2"
+proc-macro-hack = "0.5.11"
+proc-macro2 = "1.0.6"
+proc-quote = "0.3.0"
+syn = "1.0.11"
+
+[dev-dependencies]
+matches2 = "1.2.1"
+syn = {version = "1.0.11", features = ["extra-traits", "full"]}
